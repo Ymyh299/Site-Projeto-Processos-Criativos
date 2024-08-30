@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+
+@font-face {
+    font-family: 'Philosopher';
+    src: url(imgandfonts/fonts/Philosopher-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Caviardream';
+    src: url(imgandfonts/fonts/CaviarDreams.ttf);
+}
+
+@font-face {
+    font-family: 'Bebas';
+    src: url(imgandfonts/fonts/BebasNeue-Regular.ttf);
+}
+
+
+.title {
+    margin-left: 20px;
+    font-family: 'Bebas';
+    font-size: 50px;
+    padding-bottom: 10px;
+    -webkit-text-stroke: 0.5px;
+    -webkit-text-stroke-color: rgb(182, 168, 247);
+}
+
+header img {
+    height: 75px;
+}
+
+header {
+    background-color: rgb(182, 168, 247);
+    padding-top: 20px;
+    display: flex;
+    padding-left: 30px;
+    min-height: 100px;
+    align-items: center;
+
+
+
+}
+
+nav {
+    background-color: rgb(252, 229, 210);
+    min-height: 10%;
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    font-family: 'caviardream';
+    color: black;
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 20px;
+
+}
+
+
+
+
+a {
+    color: black;
+}
+
+
+.home_dropdown {
+    display: none;
+    position: absolute;
+    background-color: rgb(252, 229, 210);
+    padding: 20px; /* Reduzi o padding para um visual mais compacto */
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adicionei uma sombra para destacar o dropdown */
+    z-index: 1; /* Garante que o dropdown apareça sobre outros elementos */
+}
+
+.home_dropdown a {
+    color: black;
+    display: block; /* Ajustei para block para cada link ocupar uma linha */
+    padding: 10px; /* Adicionei padding para espaçamento interno */
+    text-decoration: none; /* Removi sublinhado padrão dos links */
+}
+
+.button_home {
+    font-family: 'caviardream';
+    font-size: 20px;
+    color: black;
+    background-color: rgb(252, 229, 210);
+    border: none;
+    cursor: pointer; /* Adicionei cursor pointer para indicar que é clicável */
+}
+
+.home {
+    position: relative;
+    display: inline-block;
+}
+
+.home:hover .home_dropdown {
+    display: block;
+}
+/* FOOTER */
+
+.footer_index {
+    background-color: rgb(182, 168, 247);
+    font-family: 'caviardream';
+    display: flex;
+    justify-content: space-around;
+    background-image: url(imgandfonts/footerimg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+footer img {
+    height: 200px;
+    background-color: rgb(182, 168, 247);
+}
+
+.linha1 {
+    width: 40%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 16vw;
+    gap: 10px;
+
+
+}
+
+.tit1 {
+    font-family: 'Bebas';
+    font-size: 50px;
+}
+
+.tit2 {
+    font-size: 20px;
+    -webkit-text-stroke: 0.5px;
+    -webkit-text-stroke-color: black;
+}
+
+.linha2 {
+    -webkit-text-stroke: 0.5px;
+    -webkit-text-stroke-color: black;
+    width: 40%;
+    font-family: 'caviardream';
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    gap: 20px;
+}
+
+
+
+/* PAG INDEX*/
+
+
+
+.login {
+    font-family: 'caviardream';
+    border-radius: 20px;
+    font-size: 30px;
+    width: 30vh;
+    border: none;
+}
+
+.cadastro {
+    font-family: 'caviardream';
+    border-radius: 20px;
+    font-size: 30px;
+    width: 30vh;
+    border: none;
+}
+
+
+.container {
+    justify-content: flex-end;
+    font-family: 'caviardream';
+    font-size: 20px;
+    display: flex;
+    min-height: 800px;
+    background-image: url(imgandfonts/fundoprov.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.parallax {
+
+    background-image: url(imgandfonts/fundoprov.jpg);
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 800px;
+
+
+}
+
+
+
+.txt {
+    padding-left: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url(imgandfonts/fundoprov_desf.jpg);
+    width: 700px;
+}
+
+
+
+.txt p {
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.txt button {
+    margin-top: 20px;
+    width: 300px;
+}
+
+
+
+
+
+
+/* PAG SOBRENOS */
+
+.container-sobrenos {
+    justify-content: center;
+    font-family: 'caviardream';
+    font-size: 20px;
+    display: flex;
+    min-height: 800px;
+    background-image: url(imgandfonts/bodyimg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    padding-left: 200px;
+    gap: 100px;
+}
+
+
+.parallax-sobrenos {
+
+    min-height: 800px;
+
+
+}
+
+.footer_sobrenos {
+    background-color: rgb(182, 168, 247);
+    font-family: 'caviardream';
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5px;
+}
+
+.logoetec {
+    width: 300px;
+    height: 270px;
+    background-image: url(imgandfonts/logoetec.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: aliceblue;
+    backdrop-filter: blur(400px);
+    -webkit-backdrop-filter: blur(400px);
+}
+
+.txt_sobrenos {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background-color: rgb(252, 229, 210);
+    height: 500px;
+    width: 400px;
+    
+}
+
+/* PAGINA SERVICOS!!!!!!!!!!!!!   */
+
+.txt_servvoz {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; 
+    font-size: 30px;
+    background-color: rgb(252, 229, 210);
+    height: 500px;
+    width: 350px;
+    gap: 70px;
+    
+}.txt_servchat {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start ; 
+    font-size: 30px;
+    background-color: rgb(252, 229, 210);
+    height: 500px;
+    width: 350px;
+    gap: 70px;
+}
+
+.container-servicos {
+    justify-content: space-around;
+    font-family: 'caviardream';
+    font-size: 20px;
+    display: flex;
+    min-height: 800px;
+    background-image: url(imgandfonts/bodyimg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+.entrevoz{
+    font-family: 'caviardream';
+    border-radius: 20px;
+    font-size: 30px;
+    width: 30vh;
+    border: none;
+}
+
+.entrechat{
+    font-family: 'caviardream';
+    border-radius: 20px;
+    font-size: 30px;
+    width: 30vh;
+    border: none;
+}
+
+
