@@ -13,12 +13,12 @@
                 <h1>Cadastro psicologo</h1>
                 <span></span>
                 <input type="name" name="name" placeholder="Nome completo" required />
-                <input type="text" id="cpf" name="cpf">
-                <input type="password" name="password" placeholder="Senha" required />
-                <input type="submit" value="Enviar">
+                <input type="text" id="RegraValidaCPF" value="" maxlength=14 name="RegraValidaCPF" onkeydown="javascript: fMascCPF( this, mCPF );" placeholder="CPF" required>
+                <input type="text" id="RegraValidaCRP" value=""  name="RegraValidaCRP" onkeydown="javascript: fMascCRP( this, mCRP );" placeholder="CRP" required>
+                <input type="password" name="password" placeholder="Senha" required /> 
                 <a href="#">Esqueceu sua senha?</a>
                 <a href="#">Cadastre-se</a>
-                <button onclick= "mostraralerta()" type="submit" value= "Enviar">Entrar</button>
+                <button onclick="ValidaCPF();" type="submit" value= "Enviar">Entrar</button>
             </form>
         </div>
         <div class="form-container sign-in-container">
@@ -57,6 +57,6 @@
     </div>
 
 
-    <script src="script.js"></script>
+    <script src="scriptphp.js"></script>
 </body>
 </html>
