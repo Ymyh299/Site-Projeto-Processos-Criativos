@@ -22,6 +22,11 @@
     src: url(imgandfonts/fonts/BebasNeue-Regular.ttf);
 }
 
+@font-face {
+    font-family: 'caviardreambold';
+    src: url(imgandfonts/fonts/CaviarDreams_Bold.ttf);
+}
+
 
 .title {
     margin-left: 20px;
@@ -244,16 +249,15 @@ footer img {
 
 .container-sobrenos {
     justify-content: center;
-    font-family: 'caviardream';
+    font-family: 'caviardreambold';
     font-size: 20px;
     display: flex;
     min-height: 800px;
-    background-image: url(imgandfonts/bodyimg.png);
+    background-image: url(imgandfonts/fotomain2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     align-items: center;
-    padding-left: 200px;
-    gap: 100px;
+    gap: 200px;
 }
 
 
@@ -266,10 +270,10 @@ footer img {
 
 .footer_sobrenos {
     background-color: rgb(182, 168, 247);
-    font-family: 'caviardream';
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     padding-top: 5px;
+    
 }
 
 .logoetec {
@@ -283,6 +287,11 @@ footer img {
     -webkit-backdrop-filter: blur(400px);
 }
 
+.titsobrenos {
+    color: white;
+    
+}
+
 .txt_sobrenos {
     padding: 50px;
     display: flex;
@@ -291,7 +300,7 @@ footer img {
     align-items: center; 
     background-color: rgb(252, 229, 210);
     height: 500px;
-    width: 400px;
+    width: 600px;
     
 }
 
