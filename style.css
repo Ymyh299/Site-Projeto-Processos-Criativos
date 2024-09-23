@@ -288,8 +288,10 @@ footer img {
 }
 
 .titsobrenos {
-    color: white;
-    
+    color: rgb(0, 0, 0);
+    font-family: 'Bebas';
+    font-size: 30px;
+    padding-bottom: 20px;
 }
 
 .txt_sobrenos {
@@ -337,7 +339,7 @@ footer img {
     font-size: 20px;
     display: flex;
     min-height: 800px;
-    background-image: url(imgandfonts/bodyimg.png);
+    background-image: url(imgandfonts/imgservc.png);
     background-repeat: no-repeat;
     background-size: cover;
     align-items: center;
