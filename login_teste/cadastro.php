@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Psicologia na Escola</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylecad.css">
 </head>
 <body>
     <div class="container" id="container">
@@ -12,12 +12,14 @@
             <form action="signup.php" method="POST">
                 <h1>Cadastro psicologo</h1>
                 <span></span>
+                <input type="Email" name="email" placeholder="Insira um e-mail válido" required />
                 <input type="name" name="name" placeholder="Nome completo" required />
+                <input type="text" name="telefone" placeholder="Telefone" required />
                 <input type="text" id="RegraValidaCPF" value="" maxlength=14 name="RegraValidaCPF" onkeydown="javascript: fMascCPF( this, mCPF );" placeholder="CPF" required>
                 <input type="text" id="RegraValidaCRP" value=""  name="RegraValidaCRP" onkeydown="javascript: fMascCRP( this, mCRP );" placeholder="CRP" required>
                 <input type="password" name="password" placeholder="Senha" required /> 
-                <a href="#">Esqueceu sua senha?</a>
-                <a href="#">Cadastre-se</a>
+                <input type="passwordconfirm" name="passwordconfirm" placeholder="Confirme a senha" required /> 
+                <a href="index.php">Já tem uma conta?</a>
                 <button onclick="ValidaCPF();" type="submit" value= "Enviar">Entrar</button>
             </form>
         </div>
@@ -26,11 +28,11 @@
                 <h1>Cadastro aluno</h1>
                 
                 <span></span>
-                <input type="email" name="email" placeholder="Email" required />
+                <input type="email" name="email" placeholder="Insira um e-mail válido" required />
+                <input type="name" name="name" placeholder="Nome completo" required />
                 <input type="password" name="password" placeholder="Senha" required />
-
-                <a href="#">Esqueceu sua senha?</a>
-                <a href="cadastro.php">Cadastre-se</a>
+                <input type="passwordconfirm" name="passwordconfirm" placeholder="Confirme a senha" required /> 
+                <a href="index.php">Já tem uma conta?</a>
 
                 <button type="submit">Entrar</button>
             </form>

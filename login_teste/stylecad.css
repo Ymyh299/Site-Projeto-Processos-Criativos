@@ -73,6 +73,7 @@ button.ghost {
 }
 
 
+
 .form-container {
     position: absolute;
     top: 0;
@@ -198,4 +199,61 @@ form a {
     font-size: 14px;
     text-decoration: none;
     margin: 15px 0;
+}
+
+/* aumentar o tamanho do container */
+  
+.container {
+    width: 1000px; /* Aumentei o container para 900px */
+    max-width: 100%;
+    min-height: 600px; /* Ajuste na altura mínima para acomodar mais campos */
+}
+
+.form-container input {
+    font-size: 14px; /* Reduzido para 14px para um layout mais compacto */
+    padding: 10px 12px; /* Redução no padding para diminuir a altura dos campos */
+    margin: 6px 0; /* Menor espaço entre os inputs */
+}
+
+button {
+    padding: 10px 40px; /* Menor padding para os botões */
+    font-size: 12px; /* Redução do tamanho da fonte do botão */
+}
+
+.overlay-container {
+    width: 50%;
+}
+
+.container.right-panel-active .overlay-container {
+    transform: translateX(-100%);
+}
+
+.overlay {
+    width: 200%; /* Isso garante que a animação se adapte ao novo tamanho */
+}
+
+.sign-in-container, .sign-up-container {
+    width: 50%; /* Continuamos com 50% para garantir a divisão igual dos painéis */
+}
+
+.container.right-panel-active .sign-in-container {
+    transform: translateX(100%);
+}
+
+.container.right-panel-active .sign-up-container {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+    animation: show 0.6s;
+}
+
+@keyframes show {
+    0%, 49.99% {
+        opacity: 0;
+        z-index: 1;
+    }
+    50%, 100% {
+        opacity: 1;
+        z-index: 5;
+    }
 }
